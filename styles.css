@@ -1,53 +1,148 @@
+/* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #808080;
+    background-color: #f0f4f8;
+    color: #333;
 }
 
-header, section {
+header, section, footer {
     padding: 20px;
-    margin: 10px;
+    margin: 10px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Header Styling */
 header {
-    background: #333;
-    border-bottom: 1px solid #ccc;
+    background: #007acc;
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px solid #005b99;
 }
 
 header h1 {
     margin: 0;
-    color: #fff;
+    font-size: 2.5em;
+    padding: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Section Styling */
+section {
+    margin-top: 20px;
 }
 
 section h2 {
-    color: #333;
+    color: #005b99;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 5px;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-code{
-    background-color: #333;
-    color: #fff;
-    border-radius: 3px;
+section p, section ul {
+    font-size: 1.1em;
 }
 
+section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Code Styling */
+code {
+    background: #e8e8e8;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #d63384;
+}
+
+/* Link Styling */
 a {
-    color: #ccc;
+    color: #007acc;
+    text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 footer nav a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Additional Styling */
+pre {
+    background: #f6f8fa;
+    border-radius: 6px;
+    padding: 16px;
+    overflow: auto;
+    font-size: 0.9em;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-style: italic;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+    header, section, footer {
+        padding: 15px;
+        margin: 5px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
 }
